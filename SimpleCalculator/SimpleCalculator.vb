@@ -18,14 +18,15 @@ Module SimpleCalculator
 
         Dim numOne As Integer = CInt(optOne)
         Dim numTwo As Integer = CInt(optTwo)
-
+        Dim result As Integer
         Console.WriteLine("Product(*) or Sum(+)?")
         optPos = Console.ReadLine()
         If optPos = "+" Then
-            Console.WriteLine(numTwo + numOne)
+            result = numTwo + numOne
         ElseIf optPos = "*" Then
-            Console.WriteLine(numTwo * numOne)
+            result = numTwo * numOne
         End If
+        Console.WriteLine("ansew is " & result)
         Console.ReadLine()
     End Sub
 End Module
