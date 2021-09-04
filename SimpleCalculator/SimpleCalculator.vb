@@ -2,7 +2,7 @@
 'RCET0265
 'Fall 2021
 'SimpleCalculator
-'
+'https://github.com/SebastianSotoMk4/SimpleCalculator.git
 Option Strict On
 Option Explicit On
 Module SimpleCalculator
@@ -10,6 +10,7 @@ Module SimpleCalculator
         Dim optOne As String
         Dim optTwo As String
         Dim optPos As String
+        Dim result As Integer
 
         Console.WriteLine("Enter Number")
         optOne = Console.ReadLine()
@@ -18,7 +19,7 @@ Module SimpleCalculator
 
         Dim numOne As Integer = CInt(optOne)
         Dim numTwo As Integer = CInt(optTwo)
-        Dim result As Integer
+
         Console.WriteLine("Product(*) or Sum(+)?")
         optPos = Console.ReadLine()
         If optPos = "+" Then
@@ -26,7 +27,7 @@ Module SimpleCalculator
         ElseIf optPos = "*" Then
             result = numTwo * numOne
         End If
-        Console.WriteLine("ansew is " & result)
+        Console.WriteLine("Answer is " & result)
         Console.ReadLine()
     End Sub
 End Module
