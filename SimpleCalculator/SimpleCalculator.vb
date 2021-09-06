@@ -28,7 +28,6 @@ Module SimpleCalculator
             result = numTwo * numOne
         End If
         Console.WriteLine("Answer is " & result)
-        '
         Console.ReadLine()
     End Sub
 End Module
